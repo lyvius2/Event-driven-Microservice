@@ -1,0 +1,27 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: product-api
+  datasource:
+    type : com.zaxxer.hikari.HikariDataSource
+    url: ENC(s77wJwqwh2fXi/D/EZ+oLt6BB/aa3lG7uFf1Dvf7UX2X2XUUd5uGboC+Z3fndALfHmzdf9QlyTelKWjU4gQOgtDBdmj4Xfyc)
+    username: ENC(RSd8MuhFApr3jTdmZDtxKdO0bFje5fO8)
+    password: ENC(EVhwYC7otjWQ18zImZ8Gsj1J2iPuTKRZ6ca0TOMh2OS0nuSxdXK3drt4uM9HHF4g)
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      pool-name: EdaDB
+      maximum-pool-size: 5
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+
+jasypt:
+  encryptor:
+    password: eda-rock
+    bean: standardPBEStringEncryptor
