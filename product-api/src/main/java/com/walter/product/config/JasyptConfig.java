@@ -1,4 +1,4 @@
-package com.walter.product.api.config;
+package com.walter.product.config;
 
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.springframework.beans.factory.annotation.Value;
